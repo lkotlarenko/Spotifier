@@ -5,7 +5,7 @@ const Login = ({ providers }) => {
     <div className="flex min-h-screen w-full flex-col items-center justify-center bg-black">
       <img
         className="mb-5 w-52"
-        src="https://github.com/lkotlarenko/Spotifier/blob/main/public/spotify_logo.png"
+        src="https://github.com/lkotlarenko/Spotifier/blob/main/public/spotify_logo.png?raw=true"
         alt="Spotify Logo"
       />
       {Object.values(providers).map((provider) => (
