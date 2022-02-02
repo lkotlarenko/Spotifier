@@ -3,7 +3,7 @@ Project recreating spotify using spotify-web-api-node + Next.js, Tailwind, Recoi
 
 ## Preview deployed app
 
-Project live on [Vercel](https://spotifier-seven.vercel.app/):
+Project live on [Vercel](https://spotifier-lkotlarenko.vercel.app):
 
 # Next.js + Tailwind CSS
 
