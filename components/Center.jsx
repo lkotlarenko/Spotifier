@@ -1,5 +1,5 @@
-import { ChevronDownIcon } from '@heroicons/react/outline'
-import { useSession } from 'next-auth/react'
+import { LogoutIcon } from '@heroicons/react/outline'
+import { useSession, signOut } from 'next-auth/react'
 import { shuffle } from 'lodash'
 import { useEffect, useState } from 'react'
 import { useRecoilValue, useRecoilState } from 'recoil'
@@ -36,10 +36,11 @@ const Center = () => {
   }, [spotifyApi, playlistId]);
 
   return (
-    <div className="flex-grow">
+    <div className="flex-grow h-screen overflow-y-scroll scrollbar-hide">
       <header className="absolute top-5 right-8">
         <div
           className="flex cursor-pointer items-center space-x-3 rounded-full bg-black p-1 pr-2 text-white opacity-90 hover:opacity-80"
+          onClick={signOut}
         >
           <img
             className="h-10 w-10 rounded-full"
@@ -47,7 +48,7 @@ const Center = () => {
             alt="Spotify Avatar"
           />
           <h2>{session?.user.name}</h2>
-          <ChevronDownIcon className="h-5 w-5" />
+          <LogoutIcon className="h-5 w-5" />
         </div>
       </header>
 
