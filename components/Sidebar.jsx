@@ -30,7 +30,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className="h-screen overflow-y-scroll border-r lg:text-sm border-gray-900 p-4 text-xs text-gray-500 scrollbar-hide sm:max-w-[12rem] lg:max-w-[15rem] hidden md:inline-flex"
+      className="h-screen overflow-y-scroll border-r lg:text-sm border-gray-900 p-4 text-xs text-gray-500 scrollbar-hide sm:max-w-[12rem] lg:max-w-[15rem] hidden md:inline-flex pb-36"
     >
       <div className="space-y-4">
         <button className="flex items-center space-x-2 hover:text-white">
