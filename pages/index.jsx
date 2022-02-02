@@ -1,10 +1,10 @@
-import Head from 'next/head';
-import Sidebar from '../components/Sidebar';
-import Center from '../components/Center';
+import Head from 'next/head'
+import Sidebar from '../components/Sidebar'
+import Center from '../components/Center'
 
 const Home = () => {
   return (
-    <div className="bg-black h-screen overflow-hidden">
+    <div className="h-screen overflow-hidden bg-black">
       <Head>
         <title>Spotifier</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
@@ -20,4 +20,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Home
